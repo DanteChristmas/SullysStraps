@@ -20,7 +20,7 @@
 	color: white; 
 	padding: 15%;
 	text-align: center;
-	color: $FFF;
+	color: #FFF;
 	z-index:2;
 	border: 3px solid #666;
 }
