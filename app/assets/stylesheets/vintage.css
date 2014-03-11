@@ -1,0 +1,14 @@
+#vintage_listings_page div.head_line{
+	margin: 40px 10px;
+	font-style: italic;
+	text-align: center;
+}
+ul.product-list {
+	text-align: center;
+}
+ul.product-list li {
+	vertical-align: top;
+}
+ul.product-list li h3{
+	text-align: center;
+}
