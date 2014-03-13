@@ -3,12 +3,31 @@
 	font-style: italic;
 	text-align: center;
 }
-ul.product-list {
+#vintage_listings_page ul.product-list {
 	text-align: center;
 }
-ul.product-list li {
+#vintage_listings_page ul.product-list li {
 	vertical-align: top;
 }
-ul.product-list li h3{
+#vintage_listings_page ul.product-list li h3{
 	text-align: center;
+}
+
+#vintage_details_page div.head_line,div.main_image {
+	padding-left: 40px;
+}
+
+#vintage_details_page dl dt {
+	margin-bottom: 15px;
+}
+#vintage_details_page dl dd {
+	margin-bottom: 30px;
+}
+
+#vintage_details_page div.ordering_section {
+	text-align: center;
+}
+
+#vintage_details_page .body_footer {
+	margin-bottom: 40px;
 }

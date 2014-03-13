@@ -26,7 +26,7 @@ strapsMainApp.config(['$routeProvider',
 				templateUrl: '../templates/vintage/listings.html',
 				controller: 'VintageListingCtrl'
 			}).
-			when('/vintage/:strapId', {
+			when('/vintage/:id', {
 				templateUrl: '../templates/vintage/details.html',
 				controller: 'VintageDetailsCtrl'
 			}).

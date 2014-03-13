@@ -1,0 +1,43 @@
+<div id="vintage_details_page" class="row body">
+	<div class="container content_section">
+		<div class="row col-md-12">
+			<div class="head_line">
+				<h3>
+					<strong>
+						{{ strap.name }} - ${{ strap.price }} Plus Shipping
+					</strong>
+				</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="main_image">
+					<img src="../img/{{ strap.img_url }}.jpg" alt="{{ strap.name }}" />
+				</div>
+			</div>
+			<div class="col-md-9">
+				<h4 class="status">{{ getStatus(strap.status) }}</h5>
+				<p>{{ strap.description }}</p>
+				<dl>
+					<dt>Shoulder Piece Details</dt>
+					<dd>{{ strap.shoulder_description }}</dd>
+					<dt>Strap Details</dt>
+					<dd>{{ strap.strap_description }}</dd>
+				</dl>
+				<div class="ordering_section">
+					<ul class="list-inline">
+						<li>
+							<a href="#/vintage" ><button type="button" class="btn btn-default">Back to Listings</button></a>
+						</li>
+						<li>
+							<a href="#/" ><button type="button" class="btn btn-primary">Ordering Information</button></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row col-md-12 body_footer">
+	
+	</div>
+</div>
