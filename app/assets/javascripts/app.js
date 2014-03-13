@@ -7,13 +7,14 @@ var strapsMainApp = angular.module('sullysStrapsMain', [
 		'GlobalDirectives',
 		'HomeDirectives',
 		'productServices',
+		'globalAnimations'
 		
 
 		/*'phonecatControllers',
 		'phonecatFilters',
 		'phonecatServices'*/
 	]);
-	
+var globalAnimations = angular.module('globalAnimations', ['ngAnimate']);	
 
 strapsMainApp.config(['$routeProvider',
 	function($routeProvider) {

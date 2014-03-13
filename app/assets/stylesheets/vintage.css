@@ -13,8 +13,15 @@
 	text-align: center;
 }
 
+#vintage_listings_page ul.product-list li img {
+	height: 300px;
+}
+
 #vintage_details_page div.head_line,div.main_image {
 	padding-left: 40px;
+}
+#vintage_details_page div.main_image>img {
+	width: 230px;
 }
 
 #vintage_details_page dl dt {

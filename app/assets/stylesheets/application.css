@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require bootstrap
+ *= require animations
  *= require global_site
  *= require home
  *= require vintage
