@@ -1,0 +1,38 @@
+<div id="vintage_listings_page" class="row body">
+	<div class="head_line">
+		<h4>
+			<strong></strong>
+		</h4>
+	</div>
+	<div class="container content_section">
+		<div class="row">
+			<div class="head_line">
+				<h4>
+					<strong>
+						Handcrafted from thoroughly cleaned and meticulously reconditioned select old/vintage leather.</br> 
+						Each instrument strap is a unique creation and inherently different from every other one.
+					</strong>
+				</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="list-inline product-list">
+					<li ng-repeat="strap in straps | orderBy: orderProp">
+						<a href="#/vintage/{{ strap.id }}">
+							<div class="thumbnail">
+								<div class="caption">
+									<h3>{{ strap.name }} </h3>
+								</div>
+								<img src="../img/{{ strap.img_url }}.jpg" alt="...">
+								<div class="caption">
+									<h3>{{ getStatus(strap.status) }}</h3>
+								</div>
+							</div>
+							</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
