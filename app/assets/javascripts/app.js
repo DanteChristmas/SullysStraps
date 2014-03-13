@@ -7,7 +7,8 @@ var strapsMainApp = angular.module('sullysStrapsMain', [
 		'GlobalDirectives',
 		'HomeDirectives',
 		'productServices',
-		'globalAnimations'
+		'globalAnimations',
+		'TestimonialControllers'
 		
 
 		/*'phonecatControllers',
@@ -30,6 +31,10 @@ strapsMainApp.config(['$routeProvider',
 			when('/vintage/:id', {
 				templateUrl: '../templates/vintage/details.html',
 				controller: 'VintageDetailsCtrl'
+			}).
+			when('/testimonials', {
+				templateUrl: '../templates/testimonials/testimonials.html',
+				controller: 'TestimonialListingCtrl'
 			}).
 			otherwise({
 				redirectTo: '/home'

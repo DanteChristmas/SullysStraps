@@ -13,7 +13,6 @@ homeDirectives.directive("imglink", function() {
 												'<img src="../img/{{ image }}.jpg" alt="..." />' +
 											'</a></div></div>',
 				link: function (scope, element, attrs) {
-					console.log(attrs);
 					scope.route = attrs.gRoute;
 					scope.image = attrs.gImage;
 					scope.imageText = attrs.gImageText;

@@ -1,0 +1,35 @@
+<div id="testimonials_page" class="row body">
+	<div class="container content_section">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="list-unstyled testimonial-list">
+					<li ng-repeat="testimonial in testimonials | orderBy: orderProp">
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<p class="comment-body">"{{ testimonial.body }}"</p>
+								<p class="commenter">- {{ testimonial.submitter }}</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="add_form">
+			<div class="row">
+				<div class="col-md-12">
+					<h4>Add a Testimonial!</h4>
+					<textarea class="form-control" rows="3" ng-model="addedTestimonial.body">
+					</textarea>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<input placeholder="Name" type="text" class="form-control" ng-model="addedTestimonial.submitter" />
+				</div>
+				<div class="col-md-6">
+					<button type="button" class="btn btn-success" ng-click="addTestimonial()">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
