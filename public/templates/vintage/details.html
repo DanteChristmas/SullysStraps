@@ -4,7 +4,7 @@
 			<div class="head_line">
 				<h3>
 					<strong>
-						{{ strap.name }} - ${{ strap.price }} Plus Shipping
+						<span ng-bind="strap.name"></span> - <span ng-bind="strap.price"></span> Plus Shipping
 					</strong>
 				</h3>
 			</div>
@@ -12,17 +12,17 @@
 		<div class="row">
 			<div class="col-md-3">
 				<div class="main_image">
-					<img src="../img/{{ strap.img_url }}.jpg" alt="{{ strap.name }}" />
+					<img src="/img/{{strap.img_url}}.jpg" alt="{{ strap.name }}" />
 				</div>
 			</div>
 			<div class="col-md-9">
-				<h4 class="status">{{ getStatus(strap.status) }}</h5>
-				<p>{{ strap.description }}</p>
+				<h4 class="status" ng-bind="getStatus(strap.status)"></h5>
+				<p ng-bind="strap.description"></p>
 				<dl>
 					<dt>Shoulder Piece Details</dt>
-					<dd>{{ strap.shoulder_description }}</dd>
+					<dd ng-bind="strap.shoulder_description"></dd>
 					<dt>Strap Details</dt>
-					<dd>{{ strap.strap_description }}</dd>
+					<dd ng-bind="strap.strap_description"></dd>
 				</dl>
 				<div class="ordering_section">
 					<ul class="list-inline">
@@ -38,6 +38,6 @@
 		</div>
 	</div>
 	<div class="row col-md-12 body_footer">
-	
+
 	</div>
 </div>

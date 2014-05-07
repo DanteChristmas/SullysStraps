@@ -20,7 +20,7 @@ development:
   database: SullysStrapsApp_development
   pool: 5
   username: postgres
-  password: x193728465
+  password: X_x193728465
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -49,7 +49,7 @@ test:
   database: SullysStrapsApp_test
   pool: 5
   username: postgres
-  password: x193728465
+  password: X_x193728465
 
 production:
   adapter: postgresql

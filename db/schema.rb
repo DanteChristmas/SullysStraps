@@ -23,12 +23,11 @@ ActiveRecord::Schema.define(version: 20140313021552) do
     t.string   "name"
     t.text     "description"
     t.string   "sub_section"
-    t.datetime "list_date"
+    t.string   "img_url"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "strap_description"
     t.text     "shoulder_description"
-    t.string   "img_url"
   end
 
   create_table "testimonials", force: true do |t|

@@ -8,6 +8,7 @@
 }
 #vintage_listings_page ul.product-list li {
 	vertical-align: top;
+	width: 229px;
 }
 #vintage_listings_page ul.product-list li h3{
 	text-align: center;
