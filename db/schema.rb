@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140313021552) do
+ActiveRecord::Schema.define(version: 20140508035959) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20140313021552) do
     t.datetime "updated_at"
     t.text     "strap_description"
     t.text     "shoulder_description"
+    t.boolean  "is_showing"
   end
 
   create_table "testimonials", force: true do |t|
