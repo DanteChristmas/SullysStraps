@@ -1,4 +1,4 @@
-﻿
+
 var strapsMainApp = angular.module('sullysStrapsMain', [
 		'ngRoute',
 		'HomeControllers',

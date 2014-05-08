@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html ng-app="sullysStrapsMain">
+<html ng-app="sullysStrapsAdmin">
 <head>
   <title>SullysStraps</title>
-  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= stylesheet_link_tag    "admin", media: "all" %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <div id="main_body" ng-controller="RootCtrl">
-    <%= render "partials/header" %>
-    <div ng-include src="view.getView('mainNav')">
+  <div id="main_body" ng-controller="MainCtrl">
+    <div ng-include src="view.getView('adminNav')">
     </div>
     <div id="page" class="container">
       <%= yield %>
-     </div>
-    <%= render "partials/footer" %>
-    <%= javascript_include_tag "application" %>
+    </div>
+    <%= javascript_include_tag "admin" %>
   </div>
 </body>
 </html>
