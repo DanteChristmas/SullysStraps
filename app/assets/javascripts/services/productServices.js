@@ -7,8 +7,8 @@ appServices.factory('VintageStraps', ['$resource',
 			get: {method: 'GET', isArray:true}
 		});
 	}]);
-	
+
 appServices.factory('Testimonials', ['$resource',
 	function ($resource){
-		return $resource('../api/testimonials/:id', {}, {});	
-}])
+		return $resource('../api/testimonials/:id', {}, {});
+}]);

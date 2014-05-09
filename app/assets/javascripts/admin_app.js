@@ -4,8 +4,11 @@ var strapsAdminApp = angular.module('sullysStrapsAdmin', [
 		'ngResource',
 
 		'AdminMainCtrl',
+		'InventoryCtrls',
 
-		'GlobalDirectives'
+		'GlobalDirectives',
+
+		'InventoryServices'
 	]);
 
 strapsAdminApp.config(['$routeProvider',

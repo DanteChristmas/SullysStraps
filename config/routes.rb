@@ -2,6 +2,7 @@ SullysStrapsApp::Application.routes.draw do
    scope :api do
     resources :products, :defaults => { :format => 'json' }
     resources :testimonials, :defaults => { :format => 'json'}
+    resources :inventory, :defaults => { :format => 'json' }
    end
    get 'admin' => 'admin#index'
   root "main#index"

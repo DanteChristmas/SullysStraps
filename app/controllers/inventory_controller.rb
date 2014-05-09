@@ -1,9 +1,17 @@
 class InventoryController < ApplicationController
-  def show
-    all_products = Products.all
-    
+  def index
+    @all_products = Product.get_inventory_products
+
     respond_to do |format|
-      format.json { render :json => @straps }
+      format.json { render :json => @all_products }
+    end
+  end
+
+  def show
+    @all_products = Product.get_inventory_products
+
+    respond_to do |format|
+      format.json { render :json => @all_products }
     end
   end
 
