@@ -1,0 +1,21 @@
+{
+  "name": "angularTable",
+  "dependencies": {
+    "angular": "~1.0.7"
+  },
+  "devDependencies": {
+    "jquery": "~2.0.3",
+    "angular-mocks": "~1.0.7",
+    "angular-scenario": "~1.0.7"
+  },
+  "homepage": "https://github.com/jjs5286/angular-table",
+  "_release": "7d7d4c69e4",
+  "_resolution": {
+    "type": "branch",
+    "branch": "develop",
+    "commit": "7d7d4c69e4d6dace11da8b7cc7d3684612c6c2f2"
+  },
+  "_source": "https://github.com/jjs5286/angular-table.git",
+  "_target": "develop",
+  "_originalSource": "https://github.com/jjs5286/angular-table.git"
+}

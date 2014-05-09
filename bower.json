@@ -14,5 +14,11 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "angular-table": "https://github.com/jjs5286/angular-table.git#develop"
+  },
+  "resolutions": {
+    "angular": "~1.2.16"
+  }
 }
