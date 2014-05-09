@@ -7,5 +7,6 @@
 #/= require angular
 #/= require angular-resource
 #/= require angular-route
+#/= require angular-table/app/scripts/directives/angular-table
 #/= require_tree ./admin
 #/= require admin_app

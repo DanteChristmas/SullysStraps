@@ -1,21 +1,21 @@
 Angular Table
 =============
 
-An angular directive for a table with fixed, sortable headers, row selection, row even/odd coloring, 
-which automatically stays the correct height relative to its container when the browser is resized. 
+An angular directive for a table with fixed, sortable headers, row selection, row even/odd coloring,
+which automatically stays the correct height relative to its container when the browser is resized.
 No javascript code required; the api is a 100% declarative dsl.
 
 Quick Start
 -----------
 
-* include [angular.js](https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js), 
-[angular-table.js](https://raw.github.com/davidjnelson/angular-table/master/src/main/webapp/js/lib/angular-table.js), 
-and [angular-table.css](https://raw.github.com/davidjnelson/angular-table/master/src/main/webapp/css/lib/angular-table.css).
-* Put this in your template: 
+* include [angular.js](https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.js) (version 1.2.6),
+[angular-table.js](https://bitbucket.org/sportslabs/angular-table/raw/a6be9209faa3e274a00d7b2f6d3db093d4fb37a2/app/scripts/directives/angular-table.js),
+and [angular-table.css](https://bitbucket.org/sportslabs/angular-table/raw/a6be9209faa3e274a00d7b2f6d3db093d4fb37a2/app/styles/angular-table.css).
+* Put this in your template:
 
 ```html
 
-<angular-table model="[ { id: 1, name: 'Bob', street: '1 street ave' } ]" 
+<angular-table model="[ { id: 1, name: 'Bob', street: '1 street ave' } ]"
     filter-query-model="filterQuery" default-sort-column="id">
     <header-row>
         <header-column sortable="true" sort-field-name="id">
@@ -33,11 +33,11 @@ and [angular-table.css](https://raw.github.com/davidjnelson/angular-table/master
         </header-column>
     </header-row>
 
-    <row on-selected="handleRowSelection(row)" selected-color="#87cefa" 
+    <row on-selected="handleRowSelection(row)" selected-color="#87cefa"
         even-color="#ffffff" odd-color="#eeeeee">
         <column>{{ row.id }}</column>
         <column>{{ row.name }}</column>
-        <column>{{ row.street }}</column>
+        <column>{{ row.street }}</input></column>
     </row>
 </angular-table>
 
@@ -48,7 +48,7 @@ and [angular-table.css](https://raw.github.com/davidjnelson/angular-table/master
 Philosophy:
 -----------
 
-Start with a solid foundation of an easy to use api, provided as a custom html tag, also known as a 
+Start with a solid foundation of an easy to use api, provided as a custom html tag, also known as a
 domain specific language.  Only implement features with use cases in apps being pushed to production.  Keep the
 code clean, lean, and blazing fast.
 
@@ -63,10 +63,10 @@ Features:
 * extremely easy to customize, just add your own html and css to the custom html tags.  it just works!
 * simple row selection.  just pass the name of a method on your controller scope, and the row will be passed in.
 * row even/odd coloring
-* rows are bound to a model, which is simply an array of your objects, allowing for simple customization 
+* rows are bound to a model, which is simply an array of your objects, allowing for simple customization
 and data loading
 * enable / disable sorting of columns
-* when the browser is resized or data is added / removed from the bound model, as scrollbars appear / disappear 
+* when the browser is resized or data is added / removed from the bound model, as scrollbars appear / disappear
 the fixed header columns adjust their width to pixel perfection.
 * when the browser is resized or data is added / removed from the bound model, the height of the scrolling
 container adjusts its height to pixel perfection, even if your container's height is specified in percentages.
@@ -120,11 +120,11 @@ https://github.com/davidjnelson/angular-table/issues/18
 
 Supported browsers:
 -------------------
-All modern browsers are supported: 
+All modern browsers are supported:
 * Windows: Chrome latest, Firefox latest, Internet Explorer 9+
 * OSX: Chrome latest, Firefox latest, Safari Latest
-* IE8<, IOS 4<, and Android 3< are not currently supported since they don't support getComputedStyle.  The project I 
-built this for doesn't have to support IE8<, but if you do and want to add support, let me know.  This would be a 
+* IE8<, IOS 4<, and Android 3< are not currently supported since they don't support getComputedStyle.  The project I
+built this for doesn't have to support IE8<, but if you do and want to add support, let me know.  This would be a
 fantastic pull request :-)
 
 Running a local demo:
@@ -152,7 +152,7 @@ and after over a week no one working on it has responded.
 * A serious, dealbreaker design issue where the column used to house the scrollbar appears even if no scrollbar is present.
 I implemented a workaround by using a negative left margin for the content I needed to be flush to the right of the grid.
 This sort of worked, but wasn't pixel perfect and felt hacky.
-* The code was too lengthy for my taste.  Weighing in at 3,400 lines, it supported a ton of 
+* The code was too lengthy for my taste.  Weighing in at 3,400 lines, it supported a ton of
 functionality that I would never need.
 * It requires jquery.  I'm working hard to completely remove jquery from my app and this would be another
 spot requiring me to keep it.
@@ -161,7 +161,7 @@ Contributing And Feature Requests
 ---------------------------------
 
 I'd love to see both pull requests and feature requests come in.  Please make sure though that anything you send in uses a 100%
-declarative configuration, and is an actual use case you are using for a production app.  If there are not real 
+declarative configuration, and is an actual use case you are using for a production app.  If there are not real
 use cases for features, I won't add them.
 
 Interact

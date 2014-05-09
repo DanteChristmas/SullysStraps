@@ -16,9 +16,10 @@
     "tests"
   ],
   "dependencies": {
-    "angular-table": "https://github.com/jjs5286/angular-table.git#develop"
+    "angular-table": "git@bitbucket.org:sportslabs/angular-table.git#1.1.3"
   },
   "resolutions": {
-    "angular": "~1.2.16"
+    "angular": "1.2.16",
+    "angular-route": "1.2.6"
   }
 }

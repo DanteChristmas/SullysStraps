@@ -1,0 +1,59 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: arial;
+  margin: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+
+.demoTable {
+    float: left;
+    margin: 0;
+    vertical-align: top;
+    height: 70%;
+    width: 70%;
+    border-bottom: 1px solid black;
+}
+
+.demoDetailPane {
+    float: left;
+    border: 1px solid black;
+    margin: 0;
+    width: 20%;
+    height: 70%;
+    background-color: #87cefa;
+    vertical-align: top;
+}
+
+.demoDetailInnerPane {
+    padding: 5px;
+}
+
+.demoHeaderColumn {
+    background-color: #cccccc;
+}
+
+.demoHeaderText {
+    display: inline-block;
+}
