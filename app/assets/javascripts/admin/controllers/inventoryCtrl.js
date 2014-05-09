@@ -1,6 +1,6 @@
-testimonialCtrl = angular.module('InventoryCtrls', []);
+inventoryCtrl = angular.module('InventoryCtrls', []);
 
-testimonialCtrl.controller('InventoryCtrl', ['$scope', 'Inventory',
+inventoryCtrl.controller('InventoryCtrl', ['$scope', 'Inventory',
   function($scope, Inventory) {
     $scope.inventory = Inventory.query();
     $scope.orderProp = "id";

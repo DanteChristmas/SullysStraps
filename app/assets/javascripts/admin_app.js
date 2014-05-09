@@ -2,6 +2,7 @@
 var strapsAdminApp = angular.module('sullysStrapsAdmin', [
 		'ngRoute',
 		'ngResource',
+		'angular-table',
 
 		'AdminMainCtrl',
 		'InventoryCtrls',
