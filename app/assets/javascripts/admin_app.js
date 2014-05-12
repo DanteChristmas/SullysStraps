@@ -8,6 +8,7 @@ var strapsAdminApp = angular.module('sullysStrapsAdmin', [
 		'InventoryCtrls',
 
 		'GlobalDirectives',
+		'InventoryDirectives',
 
 		'InventoryServices'
 	]);
