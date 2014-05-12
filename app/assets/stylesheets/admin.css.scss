@@ -11,3 +11,17 @@
  *= require_self
  *= require bootstrap
  */
+
+#inventory_page {
+
+  .angularTableContainer {
+
+    table {
+      width: 100%;
+
+      td {
+        max-width: 15%;
+      }
+    }
+  }
+}

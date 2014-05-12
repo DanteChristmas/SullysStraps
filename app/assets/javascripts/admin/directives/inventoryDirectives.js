@@ -1,7 +1,8 @@
 'use strict';
 
-angular.module('InventoryDirectives')
-  .directive('inventoryTable', [function() {
+var inventoryDir = angular.module('InventoryDirectives', []);
+
+  inventoryDir.directive('inventoryTable', [function() {
     return {
       restrict: 'EA',
       templateUrl: 'templates/admin/inventory_table.html',
